@@ -22,6 +22,8 @@ public class ProductServiceImpl implements ProductService{
 	
 	@Override
 	public Product createProduct(Product product) {
+		long nextId = productRepository.count();
+		product.setId(nextId);
 		return productRepository.save(product);
 	}
 

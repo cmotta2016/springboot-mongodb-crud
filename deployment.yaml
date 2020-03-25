@@ -9,7 +9,7 @@ metadata:
     app: java-mongo
 spec:
   rules:
-    - host: java-mongo.aks.linux4sysadmin.com.br
+    - host: java-mongo.oisva.azure.msdigital.pro
       http:
         paths:
           - backend:
@@ -18,7 +18,7 @@ spec:
             path: /
   tls:
     - hosts:
-        - java-mongo.aks.linux4sysadmin.com.br
+        - java-mongo.oisva.azure.msdigital.pro
 ---
 apiVersion: v1
 kind: Service
